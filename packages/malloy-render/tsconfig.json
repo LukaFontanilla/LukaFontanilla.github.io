@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.packages.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "composite": true
+  },
+  "include": ["./src", "node_modules/us-atlas"],
+  "references": [
+    {
+      "path": "../malloy"
+    }
+  ]
+}

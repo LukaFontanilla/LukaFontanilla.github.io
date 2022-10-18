@@ -1,0 +1,17 @@
+{
+  "name": "test",
+  "private": true,
+  "scripts": {
+    "lint": "eslint '**/*.ts{,x}'",
+    "lint-fix": "eslint '**/*.ts{,x}' --fix",
+    "test": "jest --config=../jest.config.js",
+    "build": "tsc --build",
+    "malloyc": "ts-node ../scripts/malloy-to-json"
+  },
+  "dependencies": {
+    "@malloydata/malloy": "0.0.3",
+    "@malloydata/db-bigquery": "0.0.3",
+    "@malloydata/db-postgres": "0.0.3",
+    "@malloydata/db-duckdb": "0.0.3"
+  }
+}

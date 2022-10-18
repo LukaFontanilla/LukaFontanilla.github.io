@@ -1,0 +1,24 @@
+{
+  "name": "@malloydata/db-duckdb",
+  "version": "0.0.3",
+  "license": "GPL-2.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "homepage": "https://github.com/looker-open-source/malloy#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/looker-open-source/malloy"
+  },
+  "scripts": {
+    "lint": "eslint '**/*.ts{,x}'",
+    "lint-fix": "eslint '**/*.ts{,x}' --fix",
+    "test": "jest --config=../../jest.config.js",
+    "build": "tsc --build",
+    "malloyc": "ts-node ../../scripts/malloy-to-json"
+  },
+  "dependencies": {
+    "@malloydata/malloy": "0.0.3",
+    "@duckdb/duckdb-wasm": "^1.17.0",
+    "duckdb": "0.5.1"
+  }
+}
